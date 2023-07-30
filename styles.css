@@ -1,0 +1,65 @@
+body {
+  font-family: 'Orbitron', Arial, sans-serif;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: black;
+}
+
+input {
+  padding: 5px;
+  margin-right: 10px;
+  background-color: black;
+  color: white;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  border: 2px solid white; /* Add a white border to the button */
+  box-sizing: border-box; /* Ensure border is included in the overall size */
+}
+
+/* Set the hint and result boxes to black */
+#hint,
+#result {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Additional styles for the "Congratulations" message */
+.congrats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  padding: 50px;
+  border: none;
+  background-color: black;
+  height: 100%;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+
+  /* Reduce font size for the "Congratulations" message on small screens */
+  .congrats-container {
+    font-size: 36px;
+    padding: 30px;
+  }
+}
